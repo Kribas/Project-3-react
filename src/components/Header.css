@@ -1,11 +1,16 @@
 .header {
     line-height: 40px;
-    margin-top: 10px;
     position: fixed;
     left: 0;
     right: 0;
+    top: 0;
     background: transparent;
+    transition: all ease-out .5s;
     z-index: 999;
+}
+
+.header__scroll {
+    background-color: rgba(55,64,85,0.9);
 }
 
 .logo {

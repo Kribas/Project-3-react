@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './Header.css';
 
 function Header() {
+
+  const [show,setShow] = useState(false);
+
+  const handleShow = () => {
+    if (window.scrollY > 100) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleShow);
+    return () => window.removeEventListener("scroll", handleShow);
+  }, []);
+
+
   return (
-    <div className="header">
+    <div className={`header ${show && "header__scroll"}`}>
       <div className="container d-flex justify-content-between align-items-center">
             <div className="header__left">
               <h1 className="logo">
