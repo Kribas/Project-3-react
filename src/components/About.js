@@ -1,9 +1,7 @@
 
-import { Chat, Receipt } from '@material-ui/icons'
 import { Newspaper, ViewInAr } from '@mui/icons-material'
 import './About.css'
 import React from 'react'
-import about from '../images/about.jpg'
 
 
 export default function About() {
@@ -13,7 +11,7 @@ export default function About() {
             <div className='row'>
                 <div className='col-xl-6 col-lg-6 col-md-6'>
                     <div className='about__image'>
-                        <img className='img-fluid' src={about} alt="About Image"/>
+                        <img className='img-fluid' src="/images/about.jpg" alt="About Image"/>
                     </div>
                 </div>
                 <div className='col-xl-6 col-lg-6 col-md-6'>

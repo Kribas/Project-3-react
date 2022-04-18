@@ -4,9 +4,6 @@ import VisibilitySensor from 'react-visibility-sensor';
 import './Counter.css'
 
 export default function Counter(props) {
-
-
-
   return (
     <div className="counter text-center">
       <CountUp end={props.counterEnd}>
